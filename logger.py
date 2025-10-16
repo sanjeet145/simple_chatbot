@@ -3,7 +3,7 @@ from logging.handlers import RotatingFileHandler
 import os
 
 if not os.path.exists('logs'):
-    os.makedirs('logs')
+    os.makedirs('logs',exist_ok=True)
 
 # --- Configure Logger ---
 logger = logging.getLogger("chatbot_logger")
