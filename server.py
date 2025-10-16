@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from chat_app import get_response
 from logger import logger
-from asgiref.wsgi import WsgiToAsgi
+# from asgiref.wsgi import WsgiToAsgi
 from dotenv import load_dotenv
 import os
 load_dotenv()
@@ -29,4 +29,4 @@ def chat():
 # if __name__ == '__main__':
 #     app.run(host='0.0.0.0', port=8000, debug=False)
 
-chatapp = WsgiToAsgi(app)
+# chatapp = WsgiToAsgi(app)

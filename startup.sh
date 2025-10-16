@@ -1,2 +1,3 @@
 pip install -r requirements.txt
-uvicorn server:chatapp --reload --host 0.0.0.0 --port 8000 
+gunicorn server:app --bind 0.0.0.0:8000 --workers 4
+# uvicorn server:chatapp --reload --host 0.0.0.0 --port 8000 
